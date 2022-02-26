@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body::before {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background: url("./body-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  background-position-x: center;
+  z-index: -1;
+} */
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("./body-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+header {
+  margin-top: 350px;
+  text-align: center;
+}
+header h1 {
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+main {
+  text-align: center;
+  margin: 50px 10px;
+}
+#bat-field {
+  margin-top: 20px;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px 30px;
+  font-size: 30px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s;
+}
+#bat-field:focus {
+  outline: rgb(206, 206, 206) solid 1px;
+  /* background-color: rgb(255, 246, 246); */
+  background-image: url("./bat-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.buttons {
+  margin: 20px 10px;
+}
+button {
+  transition: 0.5s;
+  font-weight: bold;
+  padding: 10px 10px;
+  font-size: 18px;
+  border-radius: 50px;
+}
+button:hover {
+  color: #fff;
+  background-image: url("./bat-bg.jpg");
+}
+.name-generate {
+  background-color: rgb(0, 0, 0);
+}
+#bat-name {
+  font-family: "Anton", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  font-size: 200px;
+  background: url("./bat-bg.jpg");
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 640px) {
+  #bat-field {
+    max-width: 90%;
+  }
+}
