@@ -7,6 +7,11 @@ const getElem = (idClass) => {
 
 // ========== Generate Handler =========
 getElem("bat-generate")[0].addEventListener("click", () => {
+  if (getElem("bat-field")[2].length <= 5) {
+    getElem("bat-name")[0].style.backgroundSize = "contain";
+  } else {
+    getElem("bat-name")[0].style.backgroundSize = "cover";
+  }
   const field = getElem("bat-field");
   if (field[2] != "") {
     getElem("bat-name")[0].innerText = field[2].toUpperCase();

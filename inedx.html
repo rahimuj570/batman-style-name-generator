@@ -9,11 +9,13 @@
   </head>
   <body>
     <header>
+      <marquee width="60%" scrollamount="5" behavior="scroll" direction="left"
+        >Highly Recommended For 5 Alphabet Names</marquee
+      >
       <h1>Batman Style Name Generator</h1>
       <input placeholder="Your Name..." id="bat-field" type="text" />
       <div class="buttons">
-        <button id="bat-generate">Generate</button>
-        <button id="bat-download">Download</button>
+        <a href="#name-gen"><button id="bat-generate">Generate</button></a>
         <div class="change-bg">
           <button id="bg-red"></button>
           <button id="bg-black"></button>
@@ -21,13 +23,14 @@
         </div>
       </div>
     </header>
-    <main>
+    <div id="name-gen"></div>
+    <main id="name-gen">
       <div id="name-generate">
-        <h1 id="bat-name">RAHIM</h1>
+        <h1 id="bat-name">BATSY</h1>
       </div>
+      <div id="output"></div>
     </main>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="./js/dom-to-image.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
