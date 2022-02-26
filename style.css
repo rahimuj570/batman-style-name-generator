@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap");
-
+html{scroll-behaviour:smooth; 
+}
 * {
   box-sizing: border-box;
   margin: 0;
